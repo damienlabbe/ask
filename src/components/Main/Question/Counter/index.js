@@ -2,15 +2,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // == Import : local
-
+import CounterStyled from './CounterStyled';
 
 // == Composant
 const Counter = ({ count, increment, decrement }) => (
-  <div className="counter">
-    <button type="button" onClick={increment}>⇧</button>
+  <CounterStyled>
+    <button className="button" type="button" onClick={increment}>⇧</button>
     <div className="value">{count}</div>
-    <button type="button" onClick={decrement}>⇩</button>
-  </div>
+    <button className="button" type="button" onClick={decrement}>⇩</button>
+  </CounterStyled>
 );
 Counter.propTypes = {
   count: PropTypes.number,

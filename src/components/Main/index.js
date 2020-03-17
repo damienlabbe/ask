@@ -5,10 +5,11 @@ import Question from './Question';
 
 const Main = () => (
   <MainStyled>
-    <button type="submit">New question</button>
-    <section>
-      <Question />
-    </section>
+    <button className="addQuestion" type="submit">New question</button>
+    <Question />
+    <Question />
+    <Question />
+    <Question />
   </MainStyled>
 
 );

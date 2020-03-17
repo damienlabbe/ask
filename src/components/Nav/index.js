@@ -5,12 +5,14 @@ import Search from './Search';
 import Login from './Login';
 import SortButtons from './SortButtons';
 
+import NavStyled from './NavStyled';
+
 const Nav = () => (
-  <div>
+  <NavStyled>
     <SortButtons />
     <Search />
     <Login />
-  </div>
+  </NavStyled>
 
 );
 
