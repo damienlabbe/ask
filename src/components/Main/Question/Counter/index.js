@@ -7,9 +7,9 @@ import PropTypes from 'prop-types';
 // == Composant
 const Counter = ({ count, increment, decrement }) => (
   <div className="counter">
-    <button type="button" onClick={decrement}>⇩</button>
-    <div className="value">{count}</div>
     <button type="button" onClick={increment}>⇧</button>
+    <div className="value">{count}</div>
+    <button type="button" onClick={decrement}>⇩</button>
   </div>
 );
 Counter.propTypes = {
