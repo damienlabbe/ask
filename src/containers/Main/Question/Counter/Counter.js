@@ -2,7 +2,7 @@
 import { connect } from 'react-redux';
 
 // == Import : local
-import Counter from 'src/components/Counter';
+import Counter from 'src/components/Main/Question/Counter';
 
 // Action Creators
 import { increment, decrement } from '../actions';

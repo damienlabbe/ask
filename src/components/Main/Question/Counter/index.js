@@ -1,9 +1,8 @@
 // == Import : npm
 import React from 'react';
 import PropTypes from 'prop-types';
-
 // == Import : local
-import './styles.css';
+
 
 // == Composant
 const Counter = ({ count, increment, decrement }) => (
@@ -13,13 +12,11 @@ const Counter = ({ count, increment, decrement }) => (
     <button type="button" onClick={increment}>⇧</button>
   </div>
 );
-
 Counter.propTypes = {
   count: PropTypes.number,
   increment: PropTypes.func.isRequired,
   decrement: PropTypes.func.isRequired,
 };
-
 Counter.defaultProps = {
   count: 0,
 };
