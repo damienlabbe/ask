@@ -3,15 +3,23 @@
 initialization react model
 yarn
 structure de l'application:
-dossier principaux: config, public, src
+
+La plupart des dossiers sont initial au react model.
+
+Dossier principaux: config, public, src
 dossier de src: actions,assets, components, containers,middleware,reducers,store
     dossier de assets: fonts et styles
     dossier de components: app, footer, header, main, nav
-    dossier de containers: main
-        dossier de main: question
-            dossier de question: counter
+        ici on a préféré décomposer au maximum pour que cela soit plus simple
+        dossier de containers: main
+            dossier de main: question
+                dossier de question: counter
+        dossier Nav: login, search et sortbuttons
 
-code de counter et definition des contenus des différents dossiers
+Code de counter et definition des contenus des différents dossiers
+    Nous avons préféré reprendre un code existant pour le counter, ainsi nous pourrons l'adapter plus tard pour notre application
+    Nous avons fait le appstyled et le headerstyled pour visualiser un peu mieu notre site
+    Nous avons préparé les fichiers loginstyled, searchstyled, sortbuttonsstyled, questionstyled, mainstyled et footerstyled avec un import dans leur index.js du dossier parent.
 
 --css--
 styled-components

@@ -1,15 +1,17 @@
 import React from 'react';
 
+import MainStyled from './MainStyled';
 import Question from './Question';
 
 const Main = () => (
-  <div>
+  <MainStyled>
     <button type="submit">New question</button>
     <section>
       <Question />
     </section>
-  </div>
+  </MainStyled>
 
 );
 
 export default Main;
+

@@ -1,10 +1,12 @@
 import React from 'react';
 
+import LoginStyled from './LoginStyled';
+
 const Login = () => (
-  <div>
+  <LoginStyled>
     <button type="submit">Se connecter</button>
     <button type="submit">S'inscrire</button>
-  </div>
+  </LoginStyled>
 
 );
 

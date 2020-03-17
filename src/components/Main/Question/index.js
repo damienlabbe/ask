@@ -1,9 +1,10 @@
 import React from 'react';
 
+import QuestionStyled from './QuestionStyled';
 import Counter from './Counter';
 
 const Question = () => (
-  <div>
+  <QuestionStyled>
     <Counter />
     <a>
       <h1>Question</h1>
@@ -12,7 +13,7 @@ const Question = () => (
     <div>
       <button type="submit">Réponds!</button>
     </div>
-  </div>
+  </QuestionStyled>
 
 );
 

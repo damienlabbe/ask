@@ -1,11 +1,13 @@
 import React from 'react';
 
+import SortButtonsStyled from './SortButtonsStyled';
+
 const SortButtons = () => (
-  <div>
+  <SortButtonsStyled>
     <button type="submit">Trending</button>
     <button type="submit">New</button>
     <button type="submit">Best</button>
-  </div>
+  </SortButtonsStyled>
 );
 
 export default SortButtons;

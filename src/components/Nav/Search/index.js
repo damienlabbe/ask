@@ -1,10 +1,13 @@
 import React from 'react';
 
-const Search = () => (
-  <form>
-    <input type="text" />
-  </form>
+import SearchStyled from './SearchStyled';
 
+const Search = () => (
+  <SearchStyled>
+    <form>
+      <input type="text" />
+    </form>
+  </SearchStyled>
 );
 
 export default Search;
