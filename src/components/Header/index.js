@@ -1,10 +1,12 @@
 import React from 'react';
 
+import HeaderStyled from './HeaderStyled';
+
 const Header = () => (
-  <header>
-    <h1>Ask!</h1>
-    <h3>phrase d'accroche</h3>
-  </header>
+  <HeaderStyled>
+    <h1 className="title">Ask !</h1>
+    <h3 className="title2">Raconte nous tes plus belles annecdotes ...</h3>
+  </HeaderStyled>
 );
 
 
