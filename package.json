@@ -55,10 +55,10 @@
   },
   "dependencies": {
     "prop-types": "*",
-    "react": "*",
+    "react": "^16.13.0",
     "react-dom": "*",
     "react-redux": "*",
     "redux": "*",
-    "styled-components": "*"
+    "styled-components": "^5.0.1"
   }
 }

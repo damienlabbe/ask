@@ -5,8 +5,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: [
-    // SCSS
-    paths.src + '/styles/index.scss',
+    // CSS
+    paths.assets + '/styles/index.css',
     // JS
     paths.src + '/index.js',
   ],
