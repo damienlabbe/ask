@@ -1,4 +1,6 @@
 import React from 'react';
+import { Navlink } from 'react-router-dom';
+
 import { Input, Form, Checkbox, Button, Icon } from 'semantic-ui-react';
 
 import SignInStyled from './SignInStyled';
@@ -6,7 +8,13 @@ import SignInStyled from './SignInStyled';
 
 const SignIn = () => (
   <SignInStyled>
-    <Button type="submit">Accueil</Button>
+    <button
+      activeClassName="selected"
+      to="/"
+      exact
+    >
+      Accueil
+    </button>
     <h1>Inscription</h1>
     <Form>
       <Form.Field>

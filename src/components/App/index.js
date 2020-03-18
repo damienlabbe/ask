@@ -1,10 +1,11 @@
 // == Import npm
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 
 // == Import
 import Header from 'src/components/Header';
 import Nav from 'src/components/Nav';
-import HomePage from 'src/components/HomePage';
+import QuestionsPage from 'src/components/QuestionsPage';
 import Footer from 'src/components/Footer';
 import SignIn from 'src/components/SignIn';
 
@@ -16,15 +17,15 @@ import AppStyled from './AppStyled';
 const App = () => (
   <AppStyled theme={theme}>
     <Header />
-    <>
-      <route path="/">
-        <Nav />
-        <HomePage />
-      </route>
-      <route path="/sign">
+    <Nav />
+    <Switch>
+      <Route key="2" path="/signIn">
         <SignIn />
-      </route>
-    </>
+      </Route>
+      <Route key="1" path="/">
+        <QuestionsPage />
+      </Route>
+    </Switch>
     <Footer />
   </AppStyled>
 );

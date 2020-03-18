@@ -11,7 +11,9 @@ const Question = () => (
       <p className="author">posté par Vanessa, il y a 10min</p>
     </a>
     <div>
-      <button className="btn" type="submit">Réponds!</button>
+      <button className="btn" type="submit">
+        Réponds!
+      </button>
     </div>
   </QuestionStyled>
 

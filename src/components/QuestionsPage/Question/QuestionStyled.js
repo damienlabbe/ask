@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const QuestionStyled = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 20%;
+  width: 70%;
   height: 20%;
   border: 1px solid grey;
   margin: 0.5rem;
@@ -14,12 +14,12 @@ const QuestionStyled = styled.div`
     font-size: 1.1rem;
     padding: 1rem 0.2rem;
     
-  },
+  }
 
   .btn {
-    height: 100%;
-  },
-
+    height: 100%; 
+  }
+  
   .text {
     text-align: left;
     width:70%;

@@ -54,10 +54,11 @@
     "webpack-merge": "*"
   },
   "dependencies": {
-    "prop-types": "*",
+    "prop-types": "^15.7.2",
     "react": "^16.13.0",
     "react-dom": "*",
     "react-redux": "*",
+    "react-router-dom": "^5.1.2",
     "redux": "*",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.88.2",
