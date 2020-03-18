@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, Form, Checkbox, Button } from 'semantic-ui-react';
+import { Input, Form, Checkbox, Button, Icon } from 'semantic-ui-react';
 
 import SignInStyled from './SignInStyled';
 
@@ -34,10 +34,7 @@ const SignIn = () => (
           <Checkbox label="J'accepte de respecter la charte du site" />
         </label>
       </Form.Field>
-      <Button animated="vertical">
-        <Button.Content visible type="submit">Je m'inscris</Button.Content>
-        <Button.Content hidden type="submit"> Go!</Button.Content>
-      </Button>
+      <Button type="submit">Je m'inscris</Button>
     </Form>
   </SignInStyled>
 

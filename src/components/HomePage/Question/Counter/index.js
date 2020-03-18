@@ -8,12 +8,22 @@ import CounterStyled from './CounterStyled';
 // == Composant
 const Counter = ({ count, increment, decrement }) => (
   <CounterStyled>
-    <Button className="button" type="button" onClick={increment}>
-      ^
+    <Button animated="vertical" className="button" onClick={increment}>
+      <Button.Content visible type="submit">
+        <Icon name="angle up" />
+      </Button.Content>
+      <Button.Content hidden type="submit">
+        <Icon name="thumbs up outline" />
+      </Button.Content>
     </Button>
     <div className="value">{count}</div>
-    <Button icon className="button" type="submit" onClick={decrement}>
-      <Icon name="angle up" />
+    <Button animated="vertical" className="button" onClick={decrement}>
+      <Button.Content visible type="submit">
+        <Icon name="angle down" />
+      </Button.Content>
+      <Button.Content hidden type="submit">
+        <Icon name="thumbs down outline" />
+      </Button.Content>
     </Button>
   </CounterStyled>
 );
