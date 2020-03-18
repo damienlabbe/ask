@@ -9,6 +9,7 @@ const HeaderStyled = styled.header`
   .title {
     font-size: 4rem;
     text-shadow: 2px 2px 2px black;
+    font-family: 'Permanent Marker', cursive;
   },
 
   .title2 {

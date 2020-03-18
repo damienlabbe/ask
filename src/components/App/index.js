@@ -4,8 +4,9 @@ import React from 'react';
 // == Import
 import Header from 'src/components/Header';
 import Nav from 'src/components/Nav';
-import Main from 'src/components/Main';
+import HomePage from 'src/components/HomePage';
 import Footer from 'src/components/Footer';
+import SignIn from 'src/components/SignIn';
 
 import theme from 'src/assets/styles/theme';
 import AppStyled from './AppStyled';
@@ -15,8 +16,15 @@ import AppStyled from './AppStyled';
 const App = () => (
   <AppStyled theme={theme}>
     <Header />
-    <Nav />
-    <Main />
+    <>
+      <route path="/">
+        <Nav />
+        <HomePage />
+      </route>
+      <route path="/sign">
+        <SignIn />
+      </route>
+    </>
     <Footer />
   </AppStyled>
 );

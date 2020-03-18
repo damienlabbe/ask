@@ -1,15 +1,20 @@
 // == Import : npm
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Button, Icon } from 'semantic-ui-react';
 // == Import : local
 import CounterStyled from './CounterStyled';
 
 // == Composant
 const Counter = ({ count, increment, decrement }) => (
   <CounterStyled>
-    <button className="button" type="button" onClick={increment}>⇧</button>
+    <Button className="button" type="button" onClick={increment}>
+      ^
+    </Button>
     <div className="value">{count}</div>
-    <button className="button" type="button" onClick={decrement}>⇩</button>
+    <Button icon className="button" type="submit" onClick={decrement}>
+      <Icon name="angle up" />
+    </Button>
   </CounterStyled>
 );
 Counter.propTypes = {

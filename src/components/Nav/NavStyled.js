@@ -5,8 +5,7 @@ const NavStyled = styled.div`
   justify-content: space-around; 
   padding: 0.5rem;
   background-color: #3c6382;
-  border: 1px solid black;
-  height: 6%;
+  height: 9%;
 
 `;
 

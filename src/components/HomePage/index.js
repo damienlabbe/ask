@@ -1,18 +1,17 @@
 import React from 'react';
 
-import MainStyled from './MainStyled';
+import HomePageStyled from './HomePageStyled';
 import Question from './Question';
 
-const Main = () => (
-  <MainStyled>
+const HomePage = () => (
+  <HomePageStyled>
     <button className="addQuestion" type="submit">New question</button>
     <Question />
     <Question />
     <Question />
     <Question />
-  </MainStyled>
+  </HomePageStyled>
 
 );
 
-export default Main;
-
+export default HomePage;

@@ -7,8 +7,8 @@ const Question = () => (
   <QuestionStyled>
     <Counter />
     <a className="text">
-      <h1 className="question">Si tu as un dernier jour à vivre ?</h1>
-      <p className="author">posté par User23, il y a 2min</p>
+      <h1 className="question">Travailler avec Damien, Nicolas ou Thomas ?</h1>
+      <p className="author">posté par Vanessa, il y a 10min</p>
     </a>
     <div>
       <button className="btn" type="submit">Réponds!</button>

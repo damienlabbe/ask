@@ -1,11 +1,12 @@
 import React from 'react';
+import { Input, Icon } from 'semantic-ui-react';
 
 import SearchStyled from './SearchStyled';
 
 const Search = () => (
   <SearchStyled>
     <form>
-      <input type="text" placeholder="Search..." />
+      <Input  type="text" placeholder="Search..." />
     </form>
   </SearchStyled>
 );

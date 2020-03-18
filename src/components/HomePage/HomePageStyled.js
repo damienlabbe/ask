@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const MainStyled = styled.main`
+const HomePageStyled = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,10 +9,11 @@ const MainStyled = styled.main`
 
   .addQuestion {
     margin: 2rem;
-    height: 2rem;
     width: 10rem;
+    padding: 1rem;
+    font-size: 1rem;
   }
 
 `;
 
-export default MainStyled;
+export default HomePageStyled;
