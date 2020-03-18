@@ -8,7 +8,6 @@ const LoginStyled = styled.div`
     width: 9rem;
     border: 1px solid black;
     background-color: lightgray;
-  
   }
 
 `;

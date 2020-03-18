@@ -1,9 +1,11 @@
 import React from 'react';
-import { Icon, Input, Form, Checkbox, Button } from 'semantic-ui-react';
+import { Input, Form, Checkbox, Button } from 'semantic-ui-react';
+
+import SignInStyled from './SignInStyled';
 
 
 const SignIn = () => (
-  <div>
+  <SignInStyled>
     <Button type="submit">Accueil</Button>
     <h1>Inscription</h1>
     <Form>
@@ -17,10 +19,7 @@ const SignIn = () => (
       </Form.Field>
       <Form.Field>
         <label>Email</label>
-        <Input placeholder="Email">
-          <Icon name="at" />
-          <input />
-        </Input>
+        <Input icon="at" placeholder="Email" />
       </Form.Field>
       <Form.Field>
         <label>Mot de passe</label>
@@ -40,7 +39,7 @@ const SignIn = () => (
         <Button.Content hidden type="submit"> Go!</Button.Content>
       </Button>
     </Form>
-  </div>
+  </SignInStyled>
 
 );
 
