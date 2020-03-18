@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SearchStyled = styled.div`
+const SearchBarStyled = styled.div`
   input {
     width:20rem;
     height: 2rem;
@@ -15,4 +15,4 @@ const SearchStyled = styled.div`
 
 `;
 
-export default SearchStyled;
+export default SearchBarStyled;
