@@ -1,8 +1,9 @@
 // == Import npm
 import React from 'react';
+// import de router-dom afin d'entourer les composants
 import { Route, Switch } from 'react-router-dom';
 
-// == Import
+// == Import locaux
 import Header from 'src/components/Header';
 import Nav from 'src/components/Nav';
 import QuestionsPage from 'src/components/QuestionsPage';

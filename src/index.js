@@ -1,11 +1,14 @@
 // == Import : npm
 import React from 'react';
+// importe du dom virtuel dans le dom reel
 import { render } from 'react-dom';
+// donne acces au store
 import { Provider } from 'react-redux';
+// donne acces au router dans toute l'application
 import { BrowserRouter as Router } from 'react-router-dom';
 
 // == Import : local
-// Composants
+// Composants locaux
 import App from 'src/components/App';
 
 // Store

@@ -1,8 +1,10 @@
 import React from 'react';
 import { Navlink } from 'react-router-dom';
 
-import { Input, Form, Checkbox, Button, Icon } from 'semantic-ui-react';
+// import du frameworks
+import { Input, Form, Checkbox, Button } from 'semantic-ui-react';
 
+// import de la feuille de style associée
 import SignInStyled from './SignInStyled';
 
 
