@@ -16,15 +16,9 @@ import AppStyled from './AppStyled';
 const App = () => (
   <AppStyled theme={theme}>
     <Header />
-    <>
-      <route path="/">
-        <Nav />
-        <HomePage />
-      </route>
-      <route path="/sign">
-        <SignIn />
-      </route>
-    </>
+    <Nav />
+    <HomePage />
+    <SignIn />
     <Footer />
   </AppStyled>
 );
