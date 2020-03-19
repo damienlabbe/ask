@@ -1,5 +1,4 @@
 import React from 'react';
-import { Navlink } from 'react-router-dom';
 
 // import du frameworks
 import { Input, Form, Checkbox, Button } from 'semantic-ui-react';
@@ -10,14 +9,7 @@ import SignInStyled from './SignInStyled';
 
 const SignIn = () => (
   <SignInStyled>
-    <button
-      activeClassName="selected"
-      to="/"
-      exact
-    >
-      Accueil
-    </button>
-    <h1>Inscription</h1>
+    <h1 className="title">INSCRIPTION</h1>
     <Form>
       <Form.Field>
         <label>Pseudo</label>
@@ -44,7 +36,7 @@ const SignIn = () => (
           <Checkbox label="J'accepte de respecter la charte du site" />
         </label>
       </Form.Field>
-      <Button type="submit">Je m'inscris</Button>
+      <Button type="submit" className="button">Je m'inscris</Button>
     </Form>
   </SignInStyled>
 

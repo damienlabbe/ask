@@ -23,7 +23,7 @@ const App = () => (
       <Route key="2" path="/signIn">
         <SignIn />
       </Route>
-      <Route key="1" path="/">
+      <Route key="1" path="/Accueil">
         <QuestionsPage />
       </Route>
     </Switch>
