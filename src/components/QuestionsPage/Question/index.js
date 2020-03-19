@@ -1,8 +1,11 @@
 import React from 'react';
+
+// on import la route de navigation
 import { NavLink } from 'react-router-dom';
 
 import QuestionStyled from './QuestionStyled';
 import Counter from './Counter';
+
 
 const Question = () => (
   <QuestionStyled>
@@ -22,7 +25,6 @@ const Question = () => (
       </button>
     </NavLink>
   </QuestionStyled>
-
 );
 
 export default Question;

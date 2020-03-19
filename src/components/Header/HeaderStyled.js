@@ -16,7 +16,6 @@ const HeaderStyled = styled.header`
     padding-top: 1rem;
     font-size: 1.5rem;
   }
-
 `;
 
 export default HeaderStyled;

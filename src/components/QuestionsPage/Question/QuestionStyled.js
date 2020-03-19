@@ -13,7 +13,6 @@ const QuestionStyled = styled.div`
   .question {
     font-size: 1.1rem;
     padding: 1rem 0.2rem;
-    
   }
 
   .btn {
