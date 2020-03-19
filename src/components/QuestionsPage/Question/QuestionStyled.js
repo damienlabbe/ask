@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const QuestionsStyled = styled.div`
+const QuestionStyled = styled.div`
   display: flex;
   justify-content: space-between;
   width: 70%;
@@ -38,4 +38,4 @@ const QuestionsStyled = styled.div`
  }
 `;
 
-export default QuestionsStyled;
+export default QuestionStyled;
