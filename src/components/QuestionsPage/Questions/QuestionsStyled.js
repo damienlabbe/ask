@@ -1,19 +1,18 @@
 import styled from 'styled-components';
 
-const QuestionStyled = styled.div`
+const QuestionsStyled = styled.div`
   display: flex;
   justify-content: space-between;
   width: 70%;
   height: 20%;
-  border: 1px solid grey;
+  border: 1px solid black;
   margin: 0.5rem;
-  background-color:;
   box-shadow: 10px 5px 5px black;
+  border-radius: 3px;
 
   .question {
     font-size: 1.1rem;
     padding: 1rem 0.2rem;
-    
   }
 
   .btn {
@@ -30,7 +29,13 @@ const QuestionStyled = styled.div`
     font-size: .8rem;
     padding: .2rem;
   }
-
+ .tag {
+   background-color: darkblue;
+   padding: 0.5rem;
+   border-radius: 3px;
+   display: inline-block;
+   font-size: 0.7rem;
+ }
 `;
 
-export default QuestionStyled;
+export default QuestionsStyled;

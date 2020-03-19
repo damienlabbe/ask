@@ -3,16 +3,16 @@ import { Button } from 'semantic-ui-react';
 
 
 import QuestionsPageStyled from './QuestionsPageStyled.js';
-import Question from './Question';
+import Questions from './Questions';
 
 const QuestionsPage = () => (
 
   <QuestionsPageStyled>
     <Button className="addQuestion" type="submit">New question</Button>
-    <Question />
-    <Question />
-    <Question />
-    <Question />
+    <Questions />
+    <Questions />
+    <Questions />
+    <Questions />
   </QuestionsPageStyled>
 
 );

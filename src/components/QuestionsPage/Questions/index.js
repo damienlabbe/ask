@@ -1,12 +1,13 @@
 import React from 'react';
 
-import QuestionStyled from './QuestionStyled';
+import QuestionsStyled from './QuestionsStyled';
 import Counter from './Counter';
 
-const Question = () => (
-  <QuestionStyled>
+const Questions = () => (
+  <QuestionsStyled>
     <Counter />
     <a className="text">
+      <p className="tag">INFORMATIQUE</p>
       <h1 className="question">Travailler avec Damien, Nicolas ou Thomas ?</h1>
       <p className="author">posté par Vanessa, il y a 10min</p>
     </a>
@@ -15,8 +16,8 @@ const Question = () => (
         Réponds!
       </button>
     </div>
-  </QuestionStyled>
+  </QuestionsStyled>
 
 );
 
-export default Question;
+export default Questions;
