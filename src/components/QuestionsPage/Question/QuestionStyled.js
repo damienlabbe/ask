@@ -7,7 +7,7 @@ const QuestionStyled = styled.div`
   height: 20%;
   border: 1px solid grey;
   margin: 0.5rem;
-  background-color:#3c6382;
+  background-color:;
   box-shadow: 10px 5px 5px black;
 
   .question {
