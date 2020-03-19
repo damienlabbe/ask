@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const HomePageStyled = styled.main`
+const QuestionsPageStyled = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,4 +16,4 @@ const HomePageStyled = styled.main`
 
 `;
 
-export default HomePageStyled;
+export default QuestionsPageStyled;

@@ -1,10 +1,14 @@
 // == Import : npm
 import React from 'react';
+// importe du dom virtuel dans le dom reel
 import { render } from 'react-dom';
+// donne acces au store
 import { Provider } from 'react-redux';
+// donne acces au router dans toute l'application
+import { BrowserRouter as Router } from 'react-router-dom';
 
 // == Import : local
-// Composants
+// Composants locaux
 import App from 'src/components/App';
 
 // Store
@@ -15,7 +19,9 @@ import store from 'src/store';
 //    => crée une structure d'objets imbriqués (DOM virtuel)
 const rootReactElement = (
   <Provider store={store}>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </Provider>
 );
 // 2. La cible du DOM (là où la structure doit prendre vie dans le DOM)

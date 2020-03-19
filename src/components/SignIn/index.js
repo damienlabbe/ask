@@ -1,12 +1,22 @@
 import React from 'react';
-import { Input, Form, Checkbox, Button, Icon } from 'semantic-ui-react';
+import { Navlink } from 'react-router-dom';
 
+// import du frameworks
+import { Input, Form, Checkbox, Button } from 'semantic-ui-react';
+
+// import de la feuille de style associée
 import SignInStyled from './SignInStyled';
 
 
 const SignIn = () => (
   <SignInStyled>
-    <Button type="submit">Accueil</Button>
+    <button
+      activeClassName="selected"
+      to="/"
+      exact
+    >
+      Accueil
+    </button>
     <h1>Inscription</h1>
     <Form>
       <Form.Field>

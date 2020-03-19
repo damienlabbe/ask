@@ -1,10 +1,12 @@
 // == Import npm
 import React from 'react';
+// import de router-dom afin d'entourer les composants
+import { Route, Switch } from 'react-router-dom';
 
-// == Import
+// == Import locaux
 import Header from 'src/components/Header';
 import Nav from 'src/components/Nav';
-import HomePage from 'src/components/HomePage';
+import QuestionsPage from 'src/components/QuestionsPage';
 import Footer from 'src/components/Footer';
 import SignIn from 'src/components/SignIn';
 
@@ -17,8 +19,14 @@ const App = () => (
   <AppStyled theme={theme}>
     <Header />
     <Nav />
-    <HomePage />
-    <SignIn />
+    <Switch>
+      <Route key="2" path="/signIn">
+        <SignIn />
+      </Route>
+      <Route key="1" path="/">
+        <QuestionsPage />
+      </Route>
+    </Switch>
     <Footer />
   </AppStyled>
 );

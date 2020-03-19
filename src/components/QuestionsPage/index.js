@@ -1,19 +1,20 @@
 import React from 'react';
 import { Button } from 'semantic-ui-react';
 
-import HomePageStyled from './HomePageStyled';
+
+import QuestionsPageStyled from './QuestionsPageStyled.js';
 import Question from './Question';
 
-const HomePage = () => (
+const QuestionsPage = () => (
 
-  <HomePageStyled>
+  <QuestionsPageStyled>
     <Button className="addQuestion" type="submit">New question</Button>
     <Question />
     <Question />
     <Question />
     <Question />
-  </HomePageStyled>
+  </QuestionsPageStyled>
 
 );
 
-export default HomePage;
+export default QuestionsPage;

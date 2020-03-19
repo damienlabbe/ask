@@ -1,5 +1,6 @@
 import React from 'react';
 
+// import du composant styled du footer
 import FooterStyled from './FooterStyled';
 
 const Footer = () => (
