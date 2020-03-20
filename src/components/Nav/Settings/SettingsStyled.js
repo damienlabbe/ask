@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
-const LoginStyled = styled.div`
+const SettingsStyled = styled.div`
   color: black;
+  font-size: 1rem;
 
   .btn {
     padding: 0 1rem;
   }
 
   @media (max-width: 400px) {
+    
     .btn {
       display: flex;
       margin: 0 .2rem;
@@ -20,6 +22,17 @@ const LoginStyled = styled.div`
     color: darkblue;
   }
 
+
+
+
+
+
+
+
+
+
+
+
 `;
 
-export default LoginStyled;
+export default SettingsStyled;

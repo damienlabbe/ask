@@ -1,16 +1,26 @@
 import styled from 'styled-components';
 
 const SortButtonsStyled = styled.div`
-  button {
-    font-size: 1rem;
-    border-radius: .3em;
-    height: 2rem;
-    width: 6rem;
-    border: 1px solid black;
-    background-color: lightgray;
+  color: black;
+  font-size: 1rem;
 
+  .btn {
+    padding: 0 1rem;
   }
+
+  @media (max-width: 400px) {
+    
+    .btn {
+      display: flex;
+      margin: 0 .2rem;
+      padding: .2rem;
+    }
+  }
+
   
+  .btn:hover {
+    color: darkblue;
+  }
 
 `;
 
