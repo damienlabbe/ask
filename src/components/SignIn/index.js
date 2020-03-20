@@ -1,7 +1,14 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 // import du frameworks
-import { Input, Form, Checkbox, Button } from 'semantic-ui-react';
+import {
+  Input,
+  Form,
+  Checkbox,
+  Button,
+} from 'semantic-ui-react';
 
 // import de la feuille de style associée
 import SignInStyled from './SignInStyled';
@@ -9,27 +16,45 @@ import SignInStyled from './SignInStyled';
 
 const SignIn = () => (
   <SignInStyled>
+    <NavLink
+      activeClassName="selected"
+      exact
+      to="/"
+      className="btnhome"
+    >
+      Retour à l'Accueil
+    </NavLink>
     <h1 className="title">INSCRIPTION</h1>
     <Form>
       <Form.Field>
-        <label>Pseudo</label>
-        <Input type="text" placeholder="Pseudo" />
+        <label>
+          Pseudo
+          <Input type="text" placeholder="Pseudo" />
+        </label>
       </Form.Field>
       <Form.Field>
-        <label>Date de naissance</label>
-        <Input type="date" placeholder="Date de naissance" />
+        <label>
+          Date de naissance
+          <Input type="date" placeholder="Date de naissance" />
+        </label>
       </Form.Field>
       <Form.Field>
-        <label>Email</label>
-        <Input icon="at" placeholder="Email" />
+        <label>
+          Email
+          <Input icon="at" placeholder="Email" />
+        </label>
       </Form.Field>
       <Form.Field>
-        <label>Mot de passe</label>
-        <Input type="password" placeholder="Mot de passe" />
+        <label>
+          Mot de passe
+          <Input type="password" placeholder="Mot de passe" />
+        </label>
       </Form.Field>
       <Form.Field>
-        <label>Confirmer votre mot de passe</label>
-        <Input type="password" placeholder="Confirmer votre mot de passe" />
+        <label>
+          Confirmer votre mot de passe
+          <Input type="password" placeholder="Confirmer votre mot de passe" />
+        </label>
       </Form.Field>
       <Form.Field>
         <label>

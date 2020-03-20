@@ -6,13 +6,21 @@ import LoginStyled from './LoginStyled';
 
 const Login = () => (
   <LoginStyled>
-    <button type="submit">Se connecter</button>
+    <NavLink
+      activeClassName="selected"
+      to="/connect"
+      exact
+      className="btn"
+    >
+      Connexion
+    </NavLink>
     <NavLink
       activeClassName="selected"
       to="/signIn"
       exact
+      className="btn"
     >
-      S'inscrire
+      Inscription
     </NavLink>
   </LoginStyled>
 

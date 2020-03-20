@@ -16,6 +16,13 @@ const HeaderStyled = styled.header`
     padding-top: 1rem;
     font-size: 1.5rem;
   }
+
+  @media (max-width: 400px) {
+    .title2 {
+      font-size: 1rem;
+    }
+  }
+
 `;
 
 export default HeaderStyled;

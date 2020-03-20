@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const QuestionStyled = styled.div`
   display: flex;
-  justify-content: space-between;
   width: 70%;
   height: 20%;
   border: 1px solid black;
@@ -18,10 +17,20 @@ const QuestionStyled = styled.div`
   .btn {
     height: 100%; 
   }
-  
+  /*pour que l'on voit que la question est cliquable sur toute la longueur de la céllule*/
+  .text:hover .question{
+    color: black;
+  }
+  /*pour que la question reste cliquable sur la céllule mais que seul la couleur du texte change au passage de la souris*/
+  .text:hover .tag {
+    color: white;
+  }
+
   .text {
+    margin: 0 0 0 0.7rem;
     text-align: left;
-    width:70%;
+    width:100%;
+    
   }
 
   .author {

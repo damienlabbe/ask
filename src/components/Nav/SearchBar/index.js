@@ -11,7 +11,8 @@ const SearchBar = () => (
         iconPosition="right"
         type="text"
         placeholder="Recherche..."
-        fluide
+        fluid
+        className="searchbar"
       />
     </Form>
   </SearchBarStyled>

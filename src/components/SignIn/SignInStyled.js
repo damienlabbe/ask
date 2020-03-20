@@ -7,11 +7,21 @@ const SignInStyled = styled.div`
 
   .title {
     text-align: center;
+    margin: 1rem;
   }
 
   .btn {
     width:100%;
   }
+
+  .btnhome {
+    text-decoration: underline;
+  }
+  
+  .btnhome:hover {
+    color: darkblue;
+  }
+  
 
 `;
 
