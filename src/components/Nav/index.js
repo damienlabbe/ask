@@ -1,7 +1,6 @@
 import React from 'react';
 
-import Settings from 'src/containers/Settings';
-
+import Settings from 'src/containers/Nav/Settings';
 import SearchBar from './SearchBar';
 import SortButtons from './SortButtons';
 

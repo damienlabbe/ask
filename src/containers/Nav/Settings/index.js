@@ -2,7 +2,7 @@
 import { connect } from 'react-redux';
 
 // == Import : local
-import Settings from 'src/components/Settings';
+import Settings from 'src/components/Nav/Settings';
 
 // Action Creators
 import { toggleOpen } from 'src/actions';
