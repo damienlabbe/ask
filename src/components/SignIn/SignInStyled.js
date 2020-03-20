@@ -17,10 +17,10 @@ const SignInStyled = styled.div`
   .btnhome {
     text-decoration: underline;
   }
-  
   .btnhome:hover {
     color: darkblue;
   }
+
   
 
 `;

@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 
 const SearchBarStyled = styled.div`
-
-width: 40vw;
+  width: 40vw;
 
   .searchbar {
     width: 100%;
   }
 
-  input:focus {
+  .searchbar:focus {
     border-color: #f17f42;
   }
 

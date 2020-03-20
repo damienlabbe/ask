@@ -8,7 +8,7 @@ const Login = () => (
   <LoginStyled>
     <NavLink
       activeClassName="selected"
-      to="/connect"
+      to=""
       exact
       className="btn"
     >
