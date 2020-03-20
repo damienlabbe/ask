@@ -12,6 +12,7 @@ const SearchBar = () => (
         type="text"
         placeholder="Recherche..."
         fluide
+        className="searchbar"
       />
     </Form>
   </SearchBarStyled>

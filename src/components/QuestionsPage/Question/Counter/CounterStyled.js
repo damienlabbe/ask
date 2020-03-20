@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 const Counterstyled = styled.div`
   text-align: center;
-  width: 4rem;
+  width: auto;
   height: 100%;
 
   .button {
     width: 100%;
-    height: 40%; 
+    height: auto; 
   }
 
 `;

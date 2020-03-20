@@ -19,15 +19,16 @@ import AppStyled from './AppStyled';
 const App = () => (
   <AppStyled theme={theme}>
     <Header />
-    <Nav />
     <Switch>
       <Route key="3" path="/Answer">
+        <Nav />
         <AnswersPage />
       </Route>
       <Route key="2" path="/signIn">
         <SignIn />
       </Route>
       <Route key="1" path="/">
+        <Nav />
         <QuestionsPage />
       </Route>
     </Switch>

@@ -14,7 +14,7 @@ const Header = () => (
     >
       Ask !
     </NavLink>
-    <h3 className="title2">Raconte nous tes plus belles anecdotes ...</h3>
+    <h3 className="title2">Une question ? Just Ask !</h3>
   </HeaderStyled>
 );
 
