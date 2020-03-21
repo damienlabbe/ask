@@ -30,14 +30,9 @@ const Settings = ({ open, isLogged, toggleForm }) => (
       )}
       {!open && (
         <>
-          <NavLink
-            to="/"
-            activeClassName="selected"
-            exact
-            onClick={toggleForm}
-          >
-            <button type="button" className="btn">Connection</button>
-          </NavLink>
+          <button type="button" className="btn" onClick={toggleForm}>
+            Connection
+          </button>
           <NavLink
             activeClassName="selected"
             to="/signIn"
