@@ -9,17 +9,15 @@ const SortButtons = () => (
       activeClassName="selected"
       to=""
       exact
-      className="btn"
     >
-      New
+      <button type="button" className="btn">New</button>
     </NavLink>
     <NavLink
       activeClassName="selected"
       to=""
       exact
-      className="btn"
     >
-      Best
+      <button type="button" className="btn">Best</button>
     </NavLink>
   </SortButtonsStyled>
 );

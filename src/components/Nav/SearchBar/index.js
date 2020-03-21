@@ -9,6 +9,7 @@ const SearchBar = () => (
       <Input
         icon="search"
         type="text"
+        fluid
         placeholder="Recherche..."
         className="searchbar"
       />

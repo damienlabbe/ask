@@ -17,16 +17,14 @@ const Settings = ({ open, isLogged, toggleForm }) => (
             to="/"
             activeClassName="selected"
             exact
-            className="btn"
           >
-            Déconnexion
+            <button type="button" className="btn">Déconnexion</button>
           </NavLink>
           <NavLink
             activeClassName="selected"
             exact
-            className="btn"
           >
-            Profil
+            <button type="button" className="btn">Profil</button>
           </NavLink>
         </div>
       )}
@@ -36,18 +34,16 @@ const Settings = ({ open, isLogged, toggleForm }) => (
             to="/"
             activeClassName="selected"
             exact
-            className="btn"
             onClick={toggleForm}
           >
-            Connexion
+            <button type="button" className="btn">Connection</button>
           </NavLink>
           <NavLink
             activeClassName="selected"
             to="/signIn"
             exact
-            className="btn"
           >
-            Inscription
+            <button type="button" className="btn">Inscription</button>
           </NavLink>
         </>
       )}
