@@ -3,9 +3,9 @@ import React from 'react';
 // on import la route de navigation
 import { NavLink } from 'react-router-dom';
 
-import QuestionStyled from './QuestionStyled';
-import Counter from './Counter';
+import Counter from 'src/containers/QuestionsPage/Question/Counter';
 
+import QuestionStyled from './QuestionStyled';
 
 const Question = () => (
   <QuestionStyled>

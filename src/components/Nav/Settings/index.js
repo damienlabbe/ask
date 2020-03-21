@@ -14,6 +14,7 @@ const Settings = ({ open, isLogged, toggleForm }) => (
       {isLogged && (
         <div>
           <NavLink
+            to="/"
             activeClassName="selected"
             exact
             className="btn"
@@ -32,6 +33,7 @@ const Settings = ({ open, isLogged, toggleForm }) => (
       {!open && (
         <>
           <NavLink
+            to="/"
             activeClassName="selected"
             exact
             className="btn"
@@ -57,15 +59,9 @@ const Settings = ({ open, isLogged, toggleForm }) => (
 );
 
 Settings.propTypes = {
-  open: PropTypes.bool,
-  isLogged: PropTypes.bool,
+  open: PropTypes.bool.isRequired,
+  isLogged: PropTypes.bool.isRequired,
   toggleForm: PropTypes.func.isRequired,
 };
-
-Settings.defaultProps = {
-  open: false,
-  isLogged: false,
-};
-
 
 export default Settings;

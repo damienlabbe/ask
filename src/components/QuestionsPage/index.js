@@ -10,9 +10,6 @@ const QuestionsPage = () => (
   <QuestionsPageStyled>
     <Button className="addQuestion" type="submit">New question</Button>
     <Question />
-    <Question />
-    <Question />
-    <Question />
   </QuestionsPageStyled>
 
 );

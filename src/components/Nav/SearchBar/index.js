@@ -8,10 +8,8 @@ const SearchBar = () => (
     <Form>
       <Input
         icon="search"
-        iconPosition="right"
         type="text"
         placeholder="Recherche..."
-        fluide
         className="searchbar"
       />
     </Form>

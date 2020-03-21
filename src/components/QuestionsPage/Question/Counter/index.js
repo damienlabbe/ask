@@ -6,34 +6,35 @@ import { Button, Icon } from 'semantic-ui-react';
 import CounterStyled from './CounterStyled';
 
 // == Composant
-const Counter = ({ count, increment, decrement }) => (
-  <CounterStyled>
-    <Button animated="vertical" className="button" onClick={increment}>
-      <Button.Content visible type="submit">
-        <Icon name="angle up" />
-      </Button.Content>
-      <Button.Content hidden type="submit">
-        <Icon name="thumbs up outline" />
-      </Button.Content>
-    </Button>
-    <div className="value">{count}</div>
-    <Button animated="vertical" className="button" onClick={decrement}>
-      <Button.Content visible type="submit">
-        <Icon name="angle down" />
-      </Button.Content>
-      <Button.Content hidden type="submit">
-        <Icon name="thumbs down outline" />
-      </Button.Content>
-    </Button>
-  </CounterStyled>
-);
+const Counter = ({ count, increment, decrement }) => {
+  console.log(increment);
+  return (
+    <CounterStyled>
+      <Button animated="vertical" className="button" onClick={increment}>
+        <Button.Content visible type="submit">
+          <Icon name="angle up" />
+        </Button.Content>
+        <Button.Content hidden type="submit">
+          <Icon name="thumbs up outline" />
+        </Button.Content>
+      </Button>
+      <div className="value">{count}</div>
+      <Button animated="vertical" className="button" onClick={decrement}>
+        <Button.Content visible type="submit">
+          <Icon name="angle down" />
+        </Button.Content>
+        <Button.Content hidden type="submit">
+          <Icon name="thumbs down outline" />
+        </Button.Content>
+      </Button>
+    </CounterStyled>
+  );
+};
+
 Counter.propTypes = {
-  count: PropTypes.number,
+  count: PropTypes.number.isRequired,
   increment: PropTypes.func.isRequired,
   decrement: PropTypes.func.isRequired,
-};
-Counter.defaultProps = {
-  count: 0,
 };
 // == Export
 export default Counter;

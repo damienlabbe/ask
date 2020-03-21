@@ -9,8 +9,8 @@ import { toggleOpen } from 'src/actions';
 
 
 const mapStateToProps = (state) => ({
-  open: state.open,
-  isLogged: state.isLogged,
+  open: state.login.open,
+  isLogged: state.login.isLogged,
 });
 
 
