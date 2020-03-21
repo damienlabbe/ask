@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const SearchBarStyled = styled.div`
   width: 40vw;
 
+
   .searchbar {
     width: 100%;
   }

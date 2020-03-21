@@ -1,10 +1,15 @@
 import styled from 'styled-components';
 
-const LoginStyled = styled.div`
+const SettingsStyled = styled.div`
+  font-size: 1rem;
   color: black;
+  position: relative;
+
 
   .btn {
     padding: 0 1rem;
+    
+
   }
 
   @media (max-width: 400px) {
@@ -14,16 +19,10 @@ const LoginStyled = styled.div`
       padding: .2rem;
     }
   }
-
   
   .btn:hover {
     color: darkblue;
   }
-
-.btn:hover {
-  color: darkblue;
-}
-
 `;
 
-export default LoginStyled;
+export default SettingsStyled;
