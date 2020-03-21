@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Button } from 'semantic-ui-react';
 
 import { NavLink } from 'react-router-dom';
 
-import LoginForm from './LoginForm';
+import LoginForm from 'src/components/Nav/Settings/LoginForm';
 
 import SettingsStyled from './SettingsStyled';
 
@@ -13,37 +14,35 @@ const Settings = ({ open, isLogged, toggleForm }) => (
     <div>
       {isLogged && (
         <div>
-          <NavLink
-            to="/"
-            activeClassName="selected"
-            exact
-          >
-            <button type="button" className="btn">Déconnexion</button>
-          </NavLink>
-          <NavLink
-            activeClassName="selected"
-            exact
-          >
-            <button type="button" className="btn">Profil</button>
-          </NavLink>
+          <Button type="button" className="btn">Déconnexion</Button>
+          <Button type="button" className="btn">Profil</Button>
         </div>
       )}
-      {!open && (
-        <>
-          <button type="button" className="btn" onClick={toggleForm}>
-            Connection
-          </button>
-          <NavLink
-            activeClassName="selected"
-            to="/signIn"
-            exact
-          >
-            <button type="button" className="btn">Inscription</button>
-          </NavLink>
-        </>
-      )}
-      {open && (
-        <LoginForm />
+      {!isLogged && (
+        <div>
+          {!open && (
+            <>
+              <Button
+                type="button"
+                className="btn"
+                onClick={toggleForm}
+              >
+                Connection
+              </Button>
+              <NavLink
+                activeClassName="selected"
+                to="/signIn"
+                exact
+                className="btn"
+              >
+                Inscription
+              </NavLink>
+            </>
+          )}
+            {open && (
+              <LoginForm />
+            )}
+        </div>
       )}
     </div>
   </SettingsStyled>
