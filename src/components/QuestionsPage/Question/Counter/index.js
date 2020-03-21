@@ -6,7 +6,7 @@ import { Button, Icon } from 'semantic-ui-react';
 import CounterStyled from './CounterStyled';
 
 // == Composant
-const Counter = ({ count, increment, decrement }) => {
+const Counter = ({ increment, decrement, score }) => {
   console.log(increment);
   return (
     <CounterStyled>
@@ -18,7 +18,7 @@ const Counter = ({ count, increment, decrement }) => {
           <Icon name="thumbs up outline" />
         </Button.Content>
       </Button>
-      <div className="value">{count}</div>
+      <div className="value">{score}</div>
       <Button animated="vertical" className="button" onClick={decrement}>
         <Button.Content visible type="submit">
           <Icon name="angle down" />
@@ -32,9 +32,10 @@ const Counter = ({ count, increment, decrement }) => {
 };
 
 Counter.propTypes = {
-  count: PropTypes.number.isRequired,
+  // count: PropTypes.number.isRequired,
   increment: PropTypes.func.isRequired,
   decrement: PropTypes.func.isRequired,
+  score: PropTypes.number.isRequired,
 };
 // == Export
 export default Counter;
