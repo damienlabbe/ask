@@ -6,6 +6,7 @@ const NavStyled = styled.div`
   padding: 0.5rem;
   background-color: rgb(194,212,248);
   
+  
 
   .btn {
     padding: .7rem;

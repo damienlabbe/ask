@@ -15,7 +15,14 @@ const Settings = ({ open, isLogged, toggleForm }) => (
       {isLogged && (
         <div>
           <Button type="button" className="btn">Déconnexion</Button>
-          <Button type="button" className="btn">Profil</Button>
+          <Navlink 
+            activeClassName="btn"
+            className="btn"
+            exact
+            to="/Profil"
+          >
+            Profil
+          </Navlink>
         </div>
       )}
       {!isLogged && (

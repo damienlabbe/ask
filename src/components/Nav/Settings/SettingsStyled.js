@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const SettingsStyled = styled.div`
   font-size: 1rem;
   color: black;
-  position:relative;
+  position: relative;
 
 
   .btn {
