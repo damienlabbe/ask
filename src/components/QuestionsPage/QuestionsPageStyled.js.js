@@ -1,5 +1,7 @@
+// == Import npm
 import styled from 'styled-components';
 
+// == Composant
 const QuestionsPageStyled = styled.main`
   display: flex;
   flex-direction: column;
@@ -16,4 +18,5 @@ const QuestionsPageStyled = styled.main`
 
 `;
 
+// == Export
 export default QuestionsPageStyled;

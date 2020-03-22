@@ -1,9 +1,14 @@
+// == Import npm
 import React from 'react';
 // on import la route de navigation
 import { NavLink } from 'react-router-dom';
 
+// == Import locaux
+// import de la feuille de style associée
 import HeaderStyled from './HeaderStyled';
 
+// == Composant
+// ici on a la fonction qui renvoi le formulaire de structure du titre et de la phrase d'accroche
 const Header = () => (
   <HeaderStyled>
     <NavLink
@@ -18,7 +23,7 @@ const Header = () => (
   </HeaderStyled>
 );
 
-
+// == Export
 export default Header;
 
 // ici on import navlink ainsi on va creer le lien vers pas la page d'accueil par un click direct sur le logo du titre du site

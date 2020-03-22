@@ -1,14 +1,18 @@
+// == Import npm
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'semantic-ui-react';
-
+// on importe la route de navigation
 import { NavLink } from 'react-router-dom';
 
+// == Import locaux
+// Import de la fonction loginform
 import LoginForm from 'src/components/Nav/Settings/LoginForm';
-
+// import de la feuille de style associée
 import SettingsStyled from './SettingsStyled';
 
-
+// == Composant
+// ici on a la fonction qui renvoi le formulaire de structure du login
 const Settings = ({ open, isLogged, toggleForm }) => (
   <SettingsStyled>
     <div>
@@ -61,4 +65,5 @@ Settings.propTypes = {
   toggleForm: PropTypes.func.isRequired,
 };
 
+// == Export
 export default Settings;

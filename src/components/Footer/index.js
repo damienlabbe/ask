@@ -1,8 +1,12 @@
+// == Import npm
 import React from 'react';
 
-// import du composant styled du footer
+// == Import locaux
+// import de la feuille de style associée
 import FooterStyled from './FooterStyled';
 
+// == Composant
+// ici on a la fonction qui renvoi le formulaire de structure du footer composé des contact, mentions légales et copyright 
 const Footer = () => (
   <FooterStyled>
     <a>CONTACT</a>
@@ -11,4 +15,5 @@ const Footer = () => (
   </FooterStyled>
 );
 
+// == Export
 export default Footer;

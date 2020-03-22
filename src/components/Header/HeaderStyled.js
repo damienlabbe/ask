@@ -1,5 +1,7 @@
+// == Import locaux
 import styled from 'styled-components';
 
+// == Composant
 const HeaderStyled = styled.header`
   text-align: center;
   left: 1rem;
@@ -25,4 +27,5 @@ const HeaderStyled = styled.header`
 
 `;
 
+// == Export
 export default HeaderStyled;

@@ -1,13 +1,17 @@
+// == Import npm
 import React from 'react';
-
 import { Button } from 'semantic-ui-react';
 
+// == Import locaux
 // Import des datas en dur Question avec les tags et l'auteur associé
 import questionsData from 'src/data/questions';
-
+// Import de la feuille de style associée
 import QuestionsPageStyled from './QuestionsPageStyled.js';
+// Import de la fonction question
 import Question from './Question';
 
+// == Composant
+// ici on affiche la fonction qui définit la structure du formulaire affichant les questions
 const QuestionsPage = () => (
 
   <QuestionsPageStyled>
@@ -19,5 +23,5 @@ const QuestionsPage = () => (
 
 );
 
-
+// == Export
 export default QuestionsPage;

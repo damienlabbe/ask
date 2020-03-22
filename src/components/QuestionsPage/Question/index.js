@@ -1,13 +1,17 @@
+// == Import npm
 import React from 'react';
 import PropTypes from 'prop-types';
-
-// on import la route de navigation
+// on importe la route de navigation
 import { NavLink } from 'react-router-dom';
 
+// == Import locaux
+// Import de la fonction counter
 import Counter from 'src/containers/QuestionsPage/Question/Counter';
-
+// Import de la feuille de style associée
 import QuestionStyled from './QuestionStyled';
 
+// == Composant
+// ici on a la fonction qui renvoi le formulaire de structure d'une question
 const Question = ({
   score,
   content,
@@ -38,4 +42,5 @@ Question.propTypes = {
   created_at: PropTypes.string.isRequired,
 };
 
+// == Export
 export default Question;

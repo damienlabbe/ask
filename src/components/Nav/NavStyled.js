@@ -1,5 +1,7 @@
+// == Import locaux
 import styled from 'styled-components';
 
+// == Composant
 const NavStyled = styled.div`
   display: flex;
   justify-content: space-around; 
@@ -33,4 +35,5 @@ const NavStyled = styled.div`
 
 `;
 
+// == Export
 export default NavStyled;

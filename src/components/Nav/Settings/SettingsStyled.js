@@ -1,5 +1,7 @@
+// == Import locaux
 import styled from 'styled-components';
 
+// == Composant
 const SettingsStyled = styled.div`
   font-size: 1rem;
   color: black;
@@ -25,4 +27,5 @@ const SettingsStyled = styled.div`
   }
 `;
 
+// == Export
 export default SettingsStyled;

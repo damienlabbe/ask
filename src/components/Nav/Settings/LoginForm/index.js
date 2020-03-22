@@ -1,9 +1,13 @@
+// == Import npm
 import React from 'react';
 import { Input, Form, Button } from 'semantic-ui-react';
 
+// == Import locaux
+// import de la feuille de style associée
 import LoginFormStyled from './LoginFormStyled';
 
-
+// == Composant
+// ici on a la fonction qui renvoi le formulaire de structure d'un login
 const LoginForm = () => (
   <LoginFormStyled>
     <Form>
@@ -29,4 +33,5 @@ const LoginForm = () => (
   </LoginFormStyled>
 );
 
+// == Export
 export default LoginForm;

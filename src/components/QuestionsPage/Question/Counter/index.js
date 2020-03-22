@@ -2,10 +2,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button, Icon } from 'semantic-ui-react';
+
 // == Import : local
+// import de la feuille de style associée
 import CounterStyled from './CounterStyled';
 
 // == Composant
+// ici on affiche le formulaire de structure de la fonction counter
 const Counter = ({ increment, decrement, score }) => {
   console.log(increment);
   return (
@@ -37,5 +40,6 @@ Counter.propTypes = {
   decrement: PropTypes.func.isRequired,
   score: PropTypes.number.isRequired,
 };
+
 // == Export
 export default Counter;

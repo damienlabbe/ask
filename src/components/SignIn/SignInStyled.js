@@ -1,5 +1,7 @@
+// == Import locaux
 import styled from 'styled-components';
 
+// == Composant
 const SignInStyled = styled.div`
   width: 40%;
   display: block;
@@ -20,9 +22,7 @@ const SignInStyled = styled.div`
   .btnhome:hover {
     color: darkblue;
   }
-
-  
-
 `;
 
+// == Export
 export default SignInStyled;

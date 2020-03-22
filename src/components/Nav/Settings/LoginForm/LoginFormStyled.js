@@ -1,5 +1,7 @@
+// == Import locaux
 import styled from 'styled-components';
 
+// == Composant
 const LoginFormStyled = styled.div`
   right: 1rem;
   padding: .5rem;
@@ -11,4 +13,5 @@ const LoginFormStyled = styled.div`
 
 `;
 
+// == Export
 export default LoginFormStyled;

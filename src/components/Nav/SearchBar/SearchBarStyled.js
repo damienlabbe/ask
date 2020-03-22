@@ -1,5 +1,7 @@
+// == Import locaux
 import styled from 'styled-components';
 
+// == Composant
 const SearchBarStyled = styled.div`
   width: 40vw;
 
@@ -14,4 +16,5 @@ const SearchBarStyled = styled.div`
 
 `;
 
+// == Export
 export default SearchBarStyled;

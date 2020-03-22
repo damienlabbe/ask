@@ -1,7 +1,8 @@
 /* eslint-disable import/no-unresolved */
+// == Import npm
 import React from 'react';
+// on importe la route de navigation
 import { NavLink } from 'react-router-dom';
-
 // import du frameworks
 import {
   Input,
@@ -10,10 +11,12 @@ import {
   Button,
 } from 'semantic-ui-react';
 
+// == Import locaux
 // import de la feuille de style associée
 import SignInStyled from './SignInStyled';
 
-
+// == Composant
+// ici on fait la fonction qui affiche le formulaire d'inscription
 const SignIn = () => (
   <SignInStyled>
     <NavLink
@@ -67,5 +70,5 @@ const SignIn = () => (
 
 );
 
-
+// == Export
 export default SignIn;

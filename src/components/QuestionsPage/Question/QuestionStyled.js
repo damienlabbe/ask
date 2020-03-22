@@ -1,5 +1,7 @@
+// == Import npm
 import styled from 'styled-components';
 
+// == Composant
 const QuestionStyled = styled.div`
   display: flex;
   width: 70%;
@@ -59,4 +61,5 @@ const QuestionStyled = styled.div`
 
 `;
 
+// == Export
 export default QuestionStyled;

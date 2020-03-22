@@ -195,12 +195,13 @@ modification du css dans HeaderStyled, SearchBarStyled, QuestionStyled, Question
 ajout de style
 
 #20/03/2020#
+
 modification du css dans HeaderStyled, LoginStyled, SearchBarStyled, CounterSTyled, QuestionStyled, SignInStyled, SettingStyled, SortButtonsStyled
 ajout de style
 
 #21/03/2020#
-modification du css et des style NavStyled, SettingsStyled, SortButtonsStyled, LoginFormStyled, SearchBarStyled
 
+modification du css et des style NavStyled, SettingsStyled, SortButtonsStyled, LoginFormStyled, SearchBarStyled
 
 
 ##Techno##
@@ -211,6 +212,7 @@ react
 react-dom
 styled-components
 
+
 ##Framework##
 
 ##Outil logiciel##
@@ -218,6 +220,7 @@ styled-components
 ##Site internet##
 
 GitHub, Stackoverflow
+
 
 ##Bugs##
 
@@ -228,11 +231,14 @@ Module not found: Error: Can't resolve '/UserS/vanessasenotier/desktop/pro/spé 
 'Users/vanessasenotier/desktop/pro/spé REACT/project-ask'
 
 #19/03/2020#
+
 - problème de pull du code
 - problème sur le composant question puis questions
 
 #20/03/2020#
+
 - problème pour faire la route du composant login et son composant déroulant
+
 
 ##Correction de bugs##
 
