@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 
 // == Composant
+// ici on a la fonction qui décrit le style du composant LoginForm
 const LoginFormStyled = styled.div`
   right: 1rem;
   padding: .5rem;
@@ -10,7 +11,6 @@ const LoginFormStyled = styled.div`
   background-color: rgb(194,212,248);
   text-align: center;
   position: absolute;
-
 `;
 
 // == Export

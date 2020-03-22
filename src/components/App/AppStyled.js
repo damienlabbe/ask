@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 
 // == Composant
+// ici on a la fonction qui décrit le style du composant App
 const AppStyled = styled.div`
   color: white;
   height: 100vh;
@@ -14,7 +15,6 @@ const AppStyled = styled.div`
   background-image: -moz-linear-gradient(top, #333b7c 0%, #476798 25%, #476798 50%, #96aacf 75%, #96aacf 100%);
   background-image: -o-linear-gradient(top, #333b7c 0%, #476798 25%, #476798 50%, #96aacf 75%, #96aacf 100%);
   background-image: -ms-linear-gradient(top, #333b7c 0%, #476798 25%, #476798 50%, #96aacf 75%, #96aacf 100%);
-  
 `;
 
 // == Export

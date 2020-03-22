@@ -2,16 +2,14 @@
 import styled from 'styled-components';
 
 // == Composant
+// ici on a la fonction qui décrit le style du composant Settings
 const SettingsStyled = styled.div`
   font-size: 1rem;
   color: black;
   position: relative;
 
-
   .btn {
     padding: 0 1rem;
-    
-
   }
 
   @media (max-width: 400px) {

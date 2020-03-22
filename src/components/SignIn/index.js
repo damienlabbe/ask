@@ -67,7 +67,6 @@ const SignIn = () => (
       <Button className="btn" type="submit">Je m'inscris</Button>
     </Form>
   </SignInStyled>
-
 );
 
 // == Export

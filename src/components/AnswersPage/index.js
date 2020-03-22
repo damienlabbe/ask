@@ -10,7 +10,6 @@ const AnswersPage = () => (
   <div>
     <p>hello</p>
   </div>
-
 );
 
 // == Export

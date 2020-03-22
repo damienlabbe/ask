@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 
 // == Composant
+// ici on a la fonction qui décrit le style du composant Question
 const QuestionStyled = styled.div`
   display: flex;
   width: 70%;
@@ -10,7 +11,6 @@ const QuestionStyled = styled.div`
   margin: 0.5rem;
   box-shadow: 10px 5px 5px black;
   border-radius: 3px;
-
 
   .question {
     font-size: 1.1rem;
@@ -25,7 +25,6 @@ const QuestionStyled = styled.div`
     color: white;
   }
   
-
   .btn {
     height: 100%; 
   }
@@ -56,9 +55,7 @@ const QuestionStyled = styled.div`
     border-radius: 3px;
     display:inline-block;
     font-size: 0.7rem;
-
   }
-
 `;
 
 // == Export

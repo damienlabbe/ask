@@ -2,9 +2,9 @@
 import styled from 'styled-components';
 
 // == Composant
+// ici on a la fonction qui décrit le style du composant SearchBar
 const SearchBarStyled = styled.div`
   width: 40vw;
-
 
   .searchbar {
     width: 100%;
@@ -13,7 +13,6 @@ const SearchBarStyled = styled.div`
   .searchbar:focus {
     border-color: #f17f42;
   }
-
 `;
 
 // == Export

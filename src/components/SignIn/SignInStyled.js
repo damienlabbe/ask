@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 
 // == Composant
+// ici on a la fonction qui décrit le style du composant SignIn
 const SignInStyled = styled.div`
   width: 40%;
   display: block;
@@ -19,6 +20,7 @@ const SignInStyled = styled.div`
   .btnhome {
     text-decoration: underline;
   }
+  
   .btnhome:hover {
     color: darkblue;
   }

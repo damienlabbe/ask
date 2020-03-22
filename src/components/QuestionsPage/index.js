@@ -13,14 +13,12 @@ import Question from './Question';
 // == Composant
 // ici on affiche la fonction qui définit la structure du formulaire affichant les questions
 const QuestionsPage = () => (
-
   <QuestionsPageStyled>
     <Button className="addQuestion" type="submit">New question</Button>
     {questionsData.map((question) => (
       <Question key={question.id} {...question} />
     ))}
   </QuestionsPageStyled>
-
 );
 
 // == Export

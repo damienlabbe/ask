@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 
 // == Composant
+// ici on a la fonction qui décrit le style du composant Header
 const HeaderStyled = styled.header`
   text-align: center;
   left: 1rem;
@@ -24,7 +25,6 @@ const HeaderStyled = styled.header`
       font-size: 1rem;
     }
   }
-
 `;
 
 // == Export

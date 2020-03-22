@@ -25,6 +25,3 @@ const Header = () => (
 
 // == Export
 export default Header;
-
-// ici on import navlink ainsi on va creer le lien vers pas la page d'accueil par un click direct sur le logo du titre du site
-// on entoure le titre par navlink puis on lui ajoute une classe active nommer selected qui va rediriger sur l'accueil du site de maniere exact que au momet du click

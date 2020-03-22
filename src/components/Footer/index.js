@@ -6,7 +6,8 @@ import React from 'react';
 import FooterStyled from './FooterStyled';
 
 // == Composant
-// ici on a la fonction qui renvoi le formulaire de structure du footer composé des contact, mentions légales et copyright 
+// ici on a la fonction qui renvoi le formulaire de structure du footer
+// composé des contact, mentions légales et copyright
 const Footer = () => (
   <FooterStyled>
     <a>CONTACT</a>

@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 
 // == Composant
+// ici on a la fonction qui décrit le style du composant QuestionsPage
 const QuestionsPageStyled = styled.main`
   display: flex;
   flex-direction: column;
@@ -15,7 +16,6 @@ const QuestionsPageStyled = styled.main`
     padding: 1rem;
     font-size: 1rem;
   }
-
 `;
 
 // == Export
