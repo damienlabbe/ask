@@ -11,11 +11,13 @@ const counter = (state = initialState, action = {}) => {
   switch (action.type) {
     // je déclare une nouvelle liste avec les actuels et le nouveau
     // il manque ceci
-  /*case ADD_INCREMENT_COUNTER: {
+    /*case ADD_INCREMENT_COUNTER: {
       const newCounter = [
         ...state.counter,
         action.counter,
-      ];*/
+      ];
+    }
+    break;*/
     // je retourne un nouveau state avec ce qu'il contenait déjà et ma nouvelle liste
     case INCREMENT_COUNTER:
       return {
