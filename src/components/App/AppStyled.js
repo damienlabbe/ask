@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 // == Composant
 // ici on a la fonction qui décrit le style du composant App
+// ceci va agir sur l'ensemble du style de l'application
 const AppStyled = styled.div`
   color: white;
   height: 100vh;
