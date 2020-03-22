@@ -175,6 +175,18 @@ route profil
 
 commentaire et readmeFront
 
+#22/03/2020#
+
+commentaire et readme Front
+
+route answerPage vers accueil
+
+- modification du index.js de src/components/AnswerPage
+- modification du AnswerPageStyled.js de src/components/AnswerPage
+création de AddQuestion dans src/components/QuestionsPage
+création de son index.js et de son AddQuestionStyled.js
+création de AddQuestionForm dans src/components/QuestionsPage/AddQuestion
+création de son index.js et de son AddQuestionFormStyled
 
 ##Css##
 
@@ -203,6 +215,9 @@ ajout de style
 
 modification du css et des style NavStyled, SettingsStyled, SortButtonsStyled, LoginFormStyled, SearchBarStyled
 
+#22/03/2020#
+
+modificationdu css et des styles AnswerPageStyled, AddQuestionStyled, AddquestionFormStyled
 
 ##Techno##
 

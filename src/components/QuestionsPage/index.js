@@ -7,6 +7,8 @@ import { Button } from 'semantic-ui-react';
 import questionsData from 'src/data/questions';
 // Import de la feuille de style associée
 import QuestionsPageStyled from './QuestionsPageStyled.js';
+// Import de la fonction addquestion
+import AddQuestion from './AddQuestion';
 // Import de la fonction question
 import Question from './Question';
 
@@ -14,7 +16,7 @@ import Question from './Question';
 // ici on affiche la fonction qui définit la structure du formulaire affichant les questions
 const QuestionsPage = () => (
   <QuestionsPageStyled>
-    <Button className="addQuestion" type="submit">New question</Button>
+    <AddQuestion />
     {questionsData.map((question) => (
       <Question key={question.id} {...question} />
     ))}
