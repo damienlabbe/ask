@@ -1,8 +1,8 @@
-#Liste des tâches éffectuées#
+# Liste des tâches éffectuées
 
-##History##
+## History
 
-#17/03/2020#
+### 17/03/2020
 
 -initialization react model
 -yarn
@@ -26,7 +26,7 @@ Code de counter et definition des contenus des différents dossiers
     Nous avons préparé les fichiers loginstyled, searchstyled, sortbuttonsstyled, questionstyled, mainstyled, footerstyled, counterstyled et le navstyled avec un import dans leur index.js du dossier parent.
     Nous avons commencé à mettre en place un peu de style
 
-#18/03/2020#
+### 18/03/2020
 
 - ajout semantic-ui
 - modification du dossier Main en homePage
@@ -48,7 +48,7 @@ Code de counter et definition des contenus des différents dossiers
 - modification du index.js dans src/components/Nav/Search
 - modification du SortButtonsStyled.js dans src/components/Nav/SortButton
 
-#19/03/2020#
+### 19/03/2020
 
 - ajout react-router-dom
 - ajout prop-types
@@ -77,7 +77,7 @@ Code de counter et definition des contenus des différents dossiers
 - changement de Questions en Question
 - création de son index.js
 
-#20/03/2020#
+### 20/03/2020
 
 modification par @media
 
@@ -115,7 +115,7 @@ création de login.js dans src/reducers
 - création d'un dossier Nav dans src/containers
 - inclure dans dossier Nav de src/containers le dossier Settings se trouvant dans src/containers
 
-#21/03/2020
+### 21/03/2020
 
 résolution de bug counter et container et props
 
@@ -175,7 +175,7 @@ route profil
 
 commentaire et readmeFront
 
-#22/03/2020#
+### 22/03/2020
 
 commentaire et readme Front
 
@@ -188,87 +188,87 @@ création de son index.js et de son AddQuestionStyled.js
 création de AddQuestionForm dans src/components/QuestionsPage/AddQuestion
 création de son index.js et de son AddQuestionFormStyled
 
-##Css##
+## Css
 
-#17/03/2020#
+### 17/03/2020
 
 styled-components
 création de fichiers theme.js, style.css, reset.css
 
-#18/03/2020#
+### 18/03/2020
 
 semantic-ui
 modification du css dans les fichier styled de App, HomePage, Counter, SortButton, Search, Question, Header, Nav
 ajout de style
 
-#19/03/2020#
+### 19/03/2020
 
 modification du css dans HeaderStyled, SearchBarStyled, QuestionStyled, QuestionsPageStyled, SignInStyled, AppStyled, NavStyled
 ajout de style
 
-#20/03/2020#
+### 20/03/2020
 
 modification du css dans HeaderStyled, LoginStyled, SearchBarStyled, CounterSTyled, QuestionStyled, SignInStyled, SettingStyled, SortButtonsStyled
 ajout de style
 
-#21/03/2020#
+### 21/03/2020
 
 modification du css et des style NavStyled, SettingsStyled, SortButtonsStyled, LoginFormStyled, SearchBarStyled
 
-#22/03/2020#
+### 22/03/2020
 
 modificationdu css et des styles AnswerPageStyled, AddQuestionStyled, AddquestionFormStyled
 
-##Techno##
+## Techno
 
-#17/03/2020#
+### 17/03/2020
 
 react
 react-dom
 styled-components
 
 
-##Framework##
+## Framework
 
-##Outil logiciel##
+## Outil logiciel
 
-##Site internet##
+## Site internet
 
 GitHub, Stackoverflow
 
 
-##Bugs##
+## Bugs
 
-#17/03/2020#
+### 17/03/2020
 
 ERROR in multi (webpack)-dev-server/client?http://localhost:8080(webpack)/hot/dev-server.js ./src/styles/index.css ./src/index.js
 Module not found: Error: Can't resolve '/UserS/vanessasenotier/desktop/pro/spé REACT/project-ask/src/styles/index.css' in
 'Users/vanessasenotier/desktop/pro/spé REACT/project-ask'
 
-#19/03/2020#
+#19/03/2020
 
 - problème de pull du code
 - problème sur le composant question puis questions
 
-#20/03/2020#
+#20/03/2020
 
 - problème pour faire la route du composant login et son composant déroulant
 
 
-##Correction de bugs##
+## Correction de bugs
 
-#17/03/2020#
+### 17/03/2020
 
 nous avons constatez que la route de index.css était issue de src alors que dans notre projet elle vient du document assets contenue dans src
 IL A DONC FALLU MODIFIER LE FICHIER DE CONFIG webpack.common.js au niveau de la logne 9 pour modifier l'entrée paths.src + '/styles/index.scss',
 par paths.assets + '/styles/index.css',
 
-#19/03/2020#
+### 19/03/2020
 
 - lecture de la fiche récap de github
 - analyse de la structure afin de comprendre la logique du code et donc afin de choisir si on nomme question ou questions
 
-#21/03/2020#
+### 21/03/2020
 
 bugs du 20/03/2020
 résolu par nicolas et vanessa
