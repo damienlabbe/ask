@@ -82,3 +82,19 @@ user signIn with post request(ok), bodyParser with settings
 
 - modification index.js dans src/components/AnswerPage
 - création de AnswerPageStyled.js dans src/components/AnswerPage
+
+# 25/03/2020
+
+## ProfilPage
+
+- modification index.js dans src/components/App
+- modification index.js dans src/components/Nav/Settings
+- modification de ProfilPageStyled.js dans src/components/ProfilPage
+- modification de index.js dans src/components/ProfilPage
+- modification de index.js dans src/components/QuestionsPage
+création du container ProfilPage dans src/containers
+création de son index.js
+
+## AnswerPage
+
+- modification index.js dans src/components/AnswerPage
