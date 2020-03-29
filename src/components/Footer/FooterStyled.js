@@ -6,9 +6,8 @@ import styled from 'styled-components';
 const FooterStyled = styled.footer`
   display: flex;
   justify-content: space-around;
-  background-color: #1B4965;
+  background-color: black;
   padding: 1rem;
-  margin-top: 1rem;
   
   a {
     margin: auto;

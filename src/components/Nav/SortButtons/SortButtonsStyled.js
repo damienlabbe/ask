@@ -9,7 +9,6 @@ const SortButtonsStyled = styled.div`
   margin-top: 2rem;
   margin-bottom: 1rem;
   text-align: left;
-
   button {
     border: 0;
     padding: 1rem 0;
@@ -17,10 +16,9 @@ const SortButtonsStyled = styled.div`
     background-color: #D8D8D8;
     width: 50%;
     font-family: 'Exo', serif;
-    color: #1B4965;
+    color: #E76F51 ;
     font-size: 1.2rem;
     font-weight: bold;
-
     &.active-btn {
       border-bottom: 2px solid #1B4965;
       background-color: white;

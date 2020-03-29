@@ -1,9 +1,26 @@
 import axios from 'axios';
 import swan from 'sweetalert';
-import { LOGIN_ACTION, DISCONNECT_ACTION, changeUser } from 'src/actions/login';
+import {
+  LOGIN_ACTION,
+  DISCONNECT_ACTION,
+  changeUser,
+  DELETE_USER,
+} from 'src/actions/login';
 
 const logMiddleware = (store) => (next) => (action) => {
   switch (action.type) {
+    case DELETE_USER: {
+      const state = store.getState();
+      axios.delete(`http://localhost:3000/user/${state.login.user.id}`)
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          HTMLFormControlsCollection.error(error);
+        });
+      next(action);
+      break;
+    }
     case LOGIN_ACTION: {
       // + on traduit l'intention en intérrogeant notre API
       // je vais avoir besoin de lire le state pour faire ma requete
