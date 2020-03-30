@@ -31,9 +31,10 @@ const ProfilPage = ({
   signIn,
   deleteUser,
   disconnectAction,
+  isLogged,
 }) => (
   <ProfilPageStyled>
-    {pseudo && (
+    {isLogged && (
       <>
         <aside className="profil">
           <h1 className="titles">Mon profil</h1>
@@ -144,7 +145,7 @@ const ProfilPage = ({
         </article>
       </>
     )}
-    {!pseudo && (
+    {!isLogged && (
       <Redirect to="/" />
     )}
   </ProfilPageStyled>
@@ -168,6 +169,7 @@ ProfilPage.propTypes = {
   }).isRequired,
   deleteUser: PropTypes.func.isRequired,
   disconnectAction: PropTypes.func.isRequired,
+  isLogged: PropTypes.bool.isRequired,
 };
 
 ProfilPage.defaultProps = {

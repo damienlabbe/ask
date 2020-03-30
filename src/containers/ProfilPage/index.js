@@ -19,6 +19,7 @@ const mapStateToProps = (state) => ({
   iduser: state.login.user.id,
   pseudo: state.login.user.pseudo,
   email: state.login.user.email,
+  isLogged: state.login,
   created_at: state.login.user.created_at,
   questions: state.questions.list,
   signIn: state.signIn,
