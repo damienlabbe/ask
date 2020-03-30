@@ -10,7 +10,7 @@ import {
   Form,
   Input,
 } from 'semantic-ui-react';
-import Avatar from 'react-avatar';
+
 
 // import de la route de navigation
 
@@ -24,24 +24,25 @@ import ProfilPageStyled from './ProfilPageStyled';
 const ProfilPage = ({
   pseudo,
   email,
-  created_at,
+  created_at: createdAt,
   iduser,
   questions,
   changeValue,
   signIn,
   deleteUser,
+  disconnectAction,
 }) => (
   <ProfilPageStyled>
     {pseudo && (
       <>
         <aside className="profil">
           <h1 className="titles">Mon profil</h1>
-          <p className="profil_name"><Avatar className="avatar" alt={pseudo} size="50" name={pseudo} round="50px" />{pseudo}</p>
+          <p className="profil_name">{pseudo}</p>
           <p className="profil_email"><Icon name="envelope" />{email}</p>
           <p className="bbday"><Icon name="birthday cake" />JJ/MM/AAAA</p>
           <p>
             <Icon name="calendar check" />
-            Inscrit depuis le: <Moment locale="fr" format="DD-MM-YYYY">{created_at}</Moment>
+            Inscrit depuis le: <Moment locale="fr" format="DD-MM-YYYY">{createdAt}</Moment>
           </p>
           <Modal
             trigger={<Button><Icon name="edit" /> Modifier</Button>}
@@ -50,7 +51,7 @@ const ProfilPage = ({
           >
             <Modal.Header>Modification</Modal.Header>
             <Modal.Content>
-              <Form>
+              <Form type="submit">
                 <p>{pseudo}</p>
                 <Form.Field>
                   <label>
@@ -110,7 +111,7 @@ const ProfilPage = ({
           </Modal>
 
           <Modal
-            trigger={<Button><Icon name="trash alternate outline" />Se désinscrire</Button>}
+            trigger={<Button type="button"><Icon name="trash alternate outline" />Se désinscrire</Button>}
             size="mini"
             closeIcon
             closeOn
@@ -121,9 +122,13 @@ const ProfilPage = ({
             </Modal.Content>
             <Modal.Actions>
               <Button
+                type="button"
                 positiveicon="checkmark"
                 content="Valider"
-                onClick={deleteUser}
+                onClick={() => {
+                  deleteUser();
+                  disconnectAction();
+                }}
               />
               <Button negative>Annuler</Button>
             </Modal.Actions>
@@ -162,6 +167,7 @@ ProfilPage.propTypes = {
     checkbox: PropTypes.bool.isRequired,
   }).isRequired,
   deleteUser: PropTypes.func.isRequired,
+  disconnectAction: PropTypes.func.isRequired,
 };
 
 ProfilPage.defaultProps = {

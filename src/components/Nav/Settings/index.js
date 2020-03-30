@@ -1,7 +1,7 @@
 // == Import npm
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button, Menu, Icon } from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react';
 
 // on import la route de navigation
 import { NavLink } from 'react-router-dom';
@@ -13,7 +13,13 @@ import SettingsStyled from './SettingsStyled';
 
 // == Composant
 // ici on a la fonction qui renvoi le formulaire de structure de settings
-const Settings = ({ open, isLogged, toggleForm, disconnectAction, user}) => (
+const Settings = ({
+  open,
+  isLogged,
+  toggleForm,
+  disconnectAction,
+  user,
+}) => (
   <SettingsStyled>
     <div>
       {isLogged && (

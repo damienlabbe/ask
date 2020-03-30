@@ -2,7 +2,8 @@
 import { connect } from 'react-redux';
 
 import { changeValue } from 'src/actions/signIn';
-import { deleteUser } from 'src/actions/login';
+import { deleteUser, disconnectAction } from 'src/actions/login';
+
 
 // == Import : local
 import ProfilPage from 'src/components/ProfilPage';
@@ -36,6 +37,9 @@ const mapDispatchToProps = (dispatch) => ({
   },
   changeValue: (value, name) => {
     dispatch(changeValue(value, name));
+  },
+  disconnectAction: () => {
+    dispatch(disconnectAction());
   },
 });
 
