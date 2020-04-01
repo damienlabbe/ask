@@ -334,3 +334,43 @@ branche footer
 - création de son index.js
 - création de footer.js dans src/actions
 - modification de index.js dans src/App
+
+#### tests
+
+branche tests
+
+installation de Mocha, Chai, Enzyme (voir readme de test)
+
+- création du dossier test
+- création du dossier components
+- création du dossier reducers
+- création de README.MD dans test
+- création de .eslintrc dans test
+- création de .setup.js dans test
+- création de App.test.js dans test/components
+- création de Footer.test.js dans test/components
+- création de Header.test.js dans test/components
+- création de ProfilPage.test.js dans test/components
+- création de SignIn.test.js dans test/components
+- création du dossier AnswersPage dans test/components
+- création du dossier Nav dans test/components
+- création du dossier QuestionsPage dans test/components
+- création de Answer.test.js dans test/components/AnswersPage
+- création de AnswersPage.test.js dans test/components/AnswersPage
+- création de Counter.test.js dans test/components/AnswersPage
+- création de SortButtons.test.js dans test/components/AnswersPage
+- création de QuestionsPage.test.js dans test/components/QuestionsPage
+- création de Question.test.js dans test/components/QuestionsPage
+- création de Counter.test.js dans test/components/QuestionsPage
+- création de LoginForm.test.js dans test/components/Nav
+- création de Nav.test.js dans test/components/Nav
+- création de SearchBar.test.js dans test/components/Nav
+- création de Settings.test.js dans test/components/Nav
+- création de SortButtons.test.js dans test/components/Nav
+- création de answer.test.js dans test/reducers
+- création de Footer.test.js dans test/reducers
+- création de fogin.test.js dans test/reducers
+- création de questions.test.js dans test/reducers
+- création de searchBar.test.js dans test/reducers
+- création de signIn.test.js dans test/reducers
+- création de tags.test.js dans test/reducers
