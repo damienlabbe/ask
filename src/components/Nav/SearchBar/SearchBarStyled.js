@@ -14,6 +14,9 @@ const SearchBarStyled = styled.div`
       color: #ED412A;
     }
   }
+  ::scrollbar {
+    marging-top: 0;
+  }
 
   @media (max-width: 700px) {
     width: 100%;

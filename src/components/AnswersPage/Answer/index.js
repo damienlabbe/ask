@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Icon } from 'semantic-ui-react';
+import Moment from 'react-moment';
 
 // == Import : local
 // import du composant styled du réponse
@@ -28,95 +29,95 @@ const Answer = ({
   upvoted,
   downvoted,
 }) => {
-return (
-  <AnswerStyled>
-    <div className="question-container">
-      <Counter score={score} questionId={id} upvoted={upvoted} downvoted={downvoted} />
-      <div className="text">
-        <div className="tag-container">
-          <p className="tag">{tag.name}</p>
-        </div>
-        <p className="question">{content}</p>
-        <div className="separator" />
-        <p className="author">posté par {author.name}, le {createdAt}</p>
-        <div className="answer-container">
-          <p className="answer-number">{answers.length} réponses</p>
+  return (
+    <AnswerStyled>
+      <div className="question-container">
+        <Counter score={score} questionId={id} upvoted={upvoted} downvoted={downvoted} />
+        <div className="text">
+          <div className="tag-container">
+            <p className="tag">{tag.name}</p>
+          </div>
+          <p className="question">{content}</p>
+          <div className="separator" />
+          <p className="author">posté par {author.name}, le <Moment locale="fr" format="DD-MM-YYYY">{createdAt}</Moment> à <Moment locale="fr" format="HH:mm">{createdAt}</Moment></p>
+          <div className="answer-container">
+            <p className="answer-number">{answers.length} réponses</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div className="container-reponse">
-      <div className="reponse-form-container">
-        <form
-          onSubmit={(event) => {
-            event.preventDefault();
-            fetchPostAnswer();
-          }}
-          className="answer-form"
-        >
-          <h3>Poster une réponse :</h3>
-          <input
-            name="content"
-            type="text"
-            value={value}
-            placeholder="Ajouter votre réponse..."
-            onChange={(event) => {
-              changeAnswerValue(event.target.value);
+      <div className="container-reponse">
+        <div className="reponse-form-container">
+          <form
+            onSubmit={(event) => {
+              event.preventDefault();
+              fetchPostAnswer();
             }}
-          />
-          {isLogged && (
-            <button type="submit"><Icon name="paper plane outline" />Publier</button>
-          )}
-          {!isLogged && (
-            <button
-              type="button"
-              onClick={() => {
-                swal('Vous devez vous connecter pour poster des réponse !', '', 'warning');
+            className="answer-form"
+          >
+            <h3>Poster une réponse :</h3>
+            <input
+              name="content"
+              type="text"
+              value={value}
+              placeholder="Ajouter votre réponse..."
+              onChange={(event) => {
+                changeAnswerValue(event.target.value);
               }}
-            >
-              <Icon name="paper plane outline" />
-              Publier
-            </button>
+            />
+            {isLogged && (
+              <button type="submit"><Icon name="paper plane outline" />Publier</button>
+            )}
+            {!isLogged && (
+              <button
+                type="button"
+                onClick={() => {
+                  swal('Vous devez vous connecter pour poster des réponse !', '', 'warning');
+                }}
+              >
+                <Icon name="paper plane outline" />
+                Publier
+              </button>
+            )}
+          </form>
+        </div>
+        <div className="answersQuestion-container">
+          <SortButtons />
+          { sorted === 'new' && (
+            answers.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at)).map((answer) => (
+              <div className="panswer" key={answer.id}>
+                <AnswerCounter {...answer} />
+                <div className="answerText">
+                  <p className="content-text">{answer.content}</p>
+                  <div className="separator" />
+                  <p className="author">posté par {answer.author.name}, le <Moment locale="fr" format="DD-MM-YYYY">{answer.created_at}</Moment> à <Moment locale="fr" format="HH:mm">{answer.created_at}</Moment></p>
+                </div>
+                <div className="userButton">
+                  <Icon name="delete" size="large" />
+                  <Icon name="edit" size="large" />
+                </div>
+              </div>
+            ))
           )}
-        </form>
+          { sorted === 'best' && (
+            answers.sort((a, b) => b.score - a.score).map((answer) => (
+              <div className="panswer" key={answer.id}>
+                <AnswerCounter {...answer} />
+                <div className="answerText">
+                  <p className="content-text">{answer.content}</p>
+                  <div className="separator" />
+                  <p className="author">posté par {answer.author.name}, le <Moment locale="fr" format="DD-MM-YYYY">{answer.created_at}</Moment> à <Moment locale="fr" format="HH:mm">{answer.created_at}</Moment></p>
+                </div>
+                <div className="userButton">
+                  <Icon name="delete" size="large" />
+                  <Icon name="edit" size="large" />
+                </div>
+              </div>
+            ))
+          )}
+        </div>
       </div>
-      <div className="answersQuestion-container">
-        <SortButtons />
-        { sorted === 'new' && (
-          answers.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at)).map((answer) => (
-            <div className="panswer" key={answer.id}>
-              <AnswerCounter {...answer} />
-              <div className="answerText">
-                <p className="content-text">{answer.content}</p>
-                <div className="separator" />
-                <p className="author">posté par {answer.author.name}, le {answer.created_at}</p>
-              </div>
-              <div className="userButton">
-                <Icon name="delete" size="large" />
-                <Icon name="edit" size="large" />
-              </div>
-            </div>
-          ))
-        )}
-        { sorted === 'best' && (
-          answers.sort((a, b) => b.score - a.score).map((answer) => (
-            <div className="panswer" key={answer.id}>
-              <AnswerCounter {...answer} />
-              <div className="answerText">
-                <p className="content-text">{answer.content}</p>
-                <div className="separator" />
-                <p className="author">posté par {answer.author.name}, le {answer.created_at}</p>
-              </div>
-              <div className="userButton">
-                <Icon name="delete" size="large" />
-                <Icon name="edit" size="large" />
-              </div>
-            </div>
-          ))
-        )}
-      </div>
-    </div>
-  </AnswerStyled>
-);
+    </AnswerStyled>
+  );
 };
 
 Answer.propTypes = {
