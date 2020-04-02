@@ -374,3 +374,41 @@ installation de Mocha, Chai, Enzyme (voir readme de test)
 - création de searchBar.test.js dans test/reducers
 - création de signIn.test.js dans test/reducers
 - création de tags.test.js dans test/reducers
+
+branche page profil
+
+#### responsive page profil
+
+- modification de LoginFormStyled.js dans src/components/Nav/Settings/LoginForm
+- modification de ProfilPageStyled.js dans src/components/ProfilPage
+- modification de index.js dans src/containers/QuestionsPage/Question
+
+#### icon for delete question in active when user is logged
+
+- modification de index.js dans src/components/Nav/Settings
+- modification de ProfilPageStyled.js dans src/components/ProfilPage
+- modification de index.js dans src/components/ProfilPage
+- modification de QuestionStyled.js dans src/components/QuestionsPage/Question
+- modification de index.js dans src/components/QuestionsPage/Question
+- modification de index.js dans src/components/QuestionsPage
+- modification de index.js dans src/containers/QuestionsPage/Question
+- modification de index.js dans src/containers/SignIn
+
+#### btn
+
+- modification de ProfilPageStyled.js dans src/components/ProfilPage
+- modification de index.js dans src/components/ProfilPage
+- modification de index.js dans src/components/QuestionsPage/Question
+- modification de ajaxQuestionMiddleware.js dans src/middleware
+
+#### commit
+
+- modification de ProfilPageStyled.js dans src/components/ProfilPage
+- modification de index.js dans src/components/ProfilPage
+- modification de index.js dans src/components/QuestionsPage/Question
+
+branche fullstackapp
+
+#### merge branch modify profil into fullstackapp
+
+#### merge branch siteCharter into fullstackapp
